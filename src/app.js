@@ -7,7 +7,7 @@ const cors = require("cors");
 const path = require("path");
 
 const index = require("./routers/index");
-const usersrouter = require("./routers/Userroute");
+const userouter = require("./routers/Userroute")
 const connectDB = require("./config/mongoose-connection");
 
 const dotenv = require('dotenv');
@@ -32,8 +32,8 @@ app.use(flash());
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/", index);
-app.use("/info", usersrouter);
+app.use("/info", userouter);
 
 // Connect to MongoDB database
 connectDB();
-app.listen(process.env.PORT || 5000, () => console.log(`listening on port ${process.env.PORT}`));
+app.listen(process.env.PORT || 4000, () => console.log(`listening on port ${process.env.PORT}`));
