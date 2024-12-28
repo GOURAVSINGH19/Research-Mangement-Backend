@@ -5,12 +5,12 @@ const {
   logout,
   resetPassword,
   forgotPassword,
-} = require("../Controllers/Authcontroll");
+} = require("../controllers/Authcontroll");
 const db = require("../config/mongoose-connection");
 
 const router = express.Router();
 const cors = require("cors");
-const { ResendMail } = require("../Controllers/ResendEmail");
+const { ResendMail } = require("../controllers/ResendEmail");
 
 const {
   Getalluser,
@@ -18,11 +18,11 @@ const {
   Uploaduserinfo,
   DeleteById,
   getUsers,
-} = require("../Controllers/Userdatacontroll");
+} = require("../controllers/Userdatacontroll");
 const {
   verifyUser,
   MarkedNotificaion,
-} = require("../Controllers/VerifyuserData");
+} = require("../controllers/VerifyuserData");
 const corsOptions = {
   credentials: true,
   origin: "http://localhost:5173",
