@@ -1,4 +1,4 @@
-const UserInfoModel = require("../Models/Usersinfomodels");
+const UserInfoModel = require("../models/Usersinfomodels");
 const sendEmail = require("../utils/VerifyUser");
 const crypto = require("crypto");
 

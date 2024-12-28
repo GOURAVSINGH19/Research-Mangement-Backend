@@ -1,4 +1,4 @@
-const Usersinfomodels = require("../Models/Usersinfomodels");
+const Usersinfomodels = require("../models/Usersinfomodels");
 
 module.exports.verifyUser = async (req, res) => {
   const { token } = req.params;

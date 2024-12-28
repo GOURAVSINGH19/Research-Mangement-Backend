@@ -1,6 +1,6 @@
 // routes/notifications.js
 const express = require("express");
-const Notification = require("../Models/Notification");
+const Notification = require("../models/Notification");
 const router = express.Router();
 
 router.post("/notification", async (req, res) => {

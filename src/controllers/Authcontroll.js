@@ -1,9 +1,9 @@
 const { generateToken } = require("../utils/generateToken");
-const UserModel = require("../Models/UserModel");
+const UserModel = require("../models/UserModel");
 const bcrypt = require("bcrypt");
 const { v4: uuidv4 } = require("uuid");
 const sendEmail = require("../utils/Sendemail");
-const Usersinfomodels = require("../Models/Usersinfomodels");
+const Usersinfomodels = require("../models/Usersinfomodels");
 module.exports.register = async (req, res) => {
   const { firstname, lastname, email, password } = req.body;
   try {
