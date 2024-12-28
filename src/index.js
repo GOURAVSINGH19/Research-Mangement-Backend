@@ -11,7 +11,6 @@ const userouter = require("./routers/Userroute")
 const connectDB = require("./config/mongoose-connection");
 
 const dotenv = require('dotenv');
-
 dotenv.config();
 
 app.use(cors({
